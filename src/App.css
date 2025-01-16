@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,9 +15,19 @@ body {
   display: flex;
   align-items: center;
 }
+.LOGO{
+  
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; 
+    font-size: 48px; 
+    color: #1ABC9C; 
+    text-align: center; 
+    margin: 20px 0; 
+}
+  
 
 nav {
-  background-color: #2c3e50;
+  background-color: #2C3E50;
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -106,27 +118,221 @@ h2 {
   color: #3498db;
 }
 
-footer {
-  background-color: #2c3e50;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-}
-
-footer p {
-  font-size: 16px;
-}
 .photo-div{
-display: flex;
-margin-left: 50px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px  0px 3px gray;
+  display: flex;
+  justify-content:space-between;
+  
 }
-.wecare-h2{
-  margin-left: 50px;
-  align-items: center;
+.wecare{
+  font-family: 'Arial', sans-serif;
+    font-size: 2.5em; 
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    background: linear-gradient(90deg, #4CAF50, #81C784); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 20px 0;
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
 }
 .container-C{
   align-content: center;
 }
 
 
+/*********** Appointment page *********/
 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f8;
+  margin: 0;
+  padding: 0;
+}
+
+.Appointment-form {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Appointment-form h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.Fields {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  color: #555;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="time"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+
+                  /*******SERVICES********/
+
+.services-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+}
+
+.service-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.service-card h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.service-card p {
+  font-size: 1em;
+  color: #555;
+}
+
+
+/****************** Footer ******************/
+
+.footer {
+  background-color: #2C3E50; 
+  color: #ECF0F1; 
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px; 
+  margin: 10px;
+}
+
+.footer-section h3 {
+  color: #1ABC9C; 
+  margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section a {
+  color: #ECF0F1; 
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section a:hover {
+  color: #1ABC9C; 
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon {
+  margin: 5px 0;
+  color: #ECF0F1; /* Social icon color */
+  text-decoration: none;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9em;
+}
