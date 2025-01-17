@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -10,21 +8,23 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
+  flex-wrap: wrap; 
 }
-.logo{
+
+.logo {
   display: flex;
+  flex-wrap: wrap; 
   align-items: center;
 }
-.LOGO{
-  
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 700; 
-    font-size: 48px; 
-    color: #1ABC9C; 
-    text-align: center; 
-    margin: 20px 0; 
+
+.LOGO {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #1ABC9C;
+  text-align: center;
+  margin: 20px 0;
 }
-  
 
 nav {
   background-color: #2C3E50;
@@ -118,31 +118,32 @@ h2 {
   color: #3498db;
 }
 
-.photo-div{
+.photo-div {
   background-color: #fff;
   padding: 20px;
-  box-shadow: 0px  0px 3px gray;
+  box-shadow: 0px 0px 3px gray;
   display: flex;
-  justify-content:space-between;
-  
-}
-.wecare{
-  font-family: 'Arial', sans-serif;
-    font-size: 2.5em; 
-    font-weight: bold;
-    text-align: center;
-    margin-top: 50px;
-    background: linear-gradient(90deg, #4CAF50, #81C784); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 20px 0;
-    transform: scale(1.1); 
-    transition: transform 0.3s ease;
-}
-.container-C{
-  align-content: center;
+  flex-wrap: wrap; 
+  justify-content: space-between;
 }
 
+.wecare {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+  background: linear-gradient(90deg, #4CAF50, #81C784);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0;
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.container-C {
+  align-content: center;
+}
 
 /*********** Appointment page *********/
 
@@ -232,8 +233,7 @@ p {
   margin-top: 10px;
 }
 
-
-                  /*******SERVICES********/
+/*********** SERVICES *********/
 
 .services-container {
   padding: 20px;
@@ -273,12 +273,11 @@ p {
   color: #555;
 }
 
-
-/****************** Footer ******************/
+/*********** FOOTER *********/
 
 .footer {
-  background-color: #2C3E50; 
-  color: #ECF0F1; 
+  background-color: #2C3E50;
+  color: #ECF0F1;
   padding: 40px 20px;
   font-family: 'Arial', sans-serif;
 }
@@ -291,12 +290,12 @@ p {
 
 .footer-section {
   flex: 1;
-  min-width: 200px; 
+  min-width: 200px;
   margin: 10px;
 }
 
 .footer-section h3 {
-  color: #1ABC9C; 
+  color: #1ABC9C;
   margin-bottom: 15px;
 }
 
@@ -311,13 +310,13 @@ p {
 }
 
 .footer-section a {
-  color: #ECF0F1; 
+  color: #ECF0F1;
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-section a:hover {
-  color: #1ABC9C; 
+  color: #1ABC9C;
 }
 
 .social-icons {
@@ -327,7 +326,7 @@ p {
 
 .social-icon {
   margin: 5px 0;
-  color: #ECF0F1; /* Social icon color */
+  color: #ECF0F1;
   text-decoration: none;
 }
 
