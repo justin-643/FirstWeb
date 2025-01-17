@@ -30,6 +30,7 @@ nav {
   background-color: #2C3E50;
   padding: 15px 30px;
   display: flex;
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
 }
