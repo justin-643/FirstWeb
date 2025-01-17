@@ -81,7 +81,7 @@ const AppointmentForm = () => {
               value={formData.name}
               onChange={handleChange}
             />
-          </div>  <br/>
+          </div>  
 
           <div>
             <label>Email:</label>
@@ -92,7 +92,7 @@ const AppointmentForm = () => {
               value={formData.email}
               onChange={handleChange}
             />
-          </div> <br/>
+          </div> 
 
           <div>
             <label>Phone:</label>
@@ -103,7 +103,7 @@ const AppointmentForm = () => {
               value={formData.phone}
               onChange={handleChange}
             />
-          </div> <br/>
+          </div> 
 
           <div>
             <label>Appointment Date:</label>
@@ -114,7 +114,7 @@ const AppointmentForm = () => {
               value={formData.appointmentDate}
               onChange={handleChange}
             />
-          </div>  <br/>
+          </div>  
 
           <div>
             <label>Appointment Time:</label>
@@ -125,7 +125,7 @@ const AppointmentForm = () => {
               value={formData.time}
               onChange={handleChange}
             />
-          </div>  <br/>
+          </div>  
 
           <div>
             <label>Message:</label>
