@@ -1,6 +1,8 @@
 import React from 'react'
 
 const Header = () => {
+    
+  const image = require(`../Media/${"Logo.webp"}`);
 
   
   return (
@@ -8,7 +10,7 @@ const Header = () => {
       {/* Navbar */}
       <nav>
         <div  className="logo">
-          <img src="https://static.vecteezy.com/system/resources/previews/017/196/552/non_2x/doctor-icon-on-transparent-background-free-png.png" alt="Error.." height="40" width="50" />
+          <img src={image} alt="Error.." height="40" width="50" />
           <h1 className='LOGO'>Health care </h1>
         </div>
         <ul className="nav-links">
@@ -16,6 +18,7 @@ const Header = () => {
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href='Screen3'>Admin</a></li>
         </ul>
       </nav>
     </div>

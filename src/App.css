@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +11,8 @@ body {
   background-color: #f4f4f4;
   flex-wrap: wrap; 
 }
+
+/************** Home *****************/
 
 .logo {
   display: flex;
@@ -136,144 +139,251 @@ h2 {
   text-align: center;
   margin-top: 50px;
   background: linear-gradient(90deg, #4CAF50, #81C784);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent; 
+  background-clip: text; 
+  -webkit-background-clip: text; 
   margin: 20px 0;
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
 
+.wecare:hover {
+  transform: scale(1.2);
+}
+
+
+
+
+/* ************* contact *************** */
+
 .container-C {
-  align-content: center;
+display: flex;
+width: 100%;
 }
 
-/*********** Appointment page *********/
+.Form-C{
+  padding: 10px;
+  box-shadow: 0px 0px 5px black;
+  border-radius: 7px;
+  width: 300px;
+  justify-content: center;
+}
+.btn-C{
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin: 5px;
+}
+.Input-C{
+  
+  padding: 5px;
+  
+}
+.Input-T{
+  height: 30px;
+}
 
-body {
+/*********************** Login Page ********************/
+
+/* Container for the entire login page */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   background-color: #f4f6f9;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f7f8;
-  margin: 0;
-  padding: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.Appointment-form {
-  max-width: 600px;
-  margin: 50px auto;
-  padding: 20px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+/* Header styling */
+.Login-h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
   text-align: center;
 }
 
-.Appointment-form h2 {
-  color: #333;
+/* Form container styling */
+.Login-Form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Input and label styling */
+.Login-Form div {
   margin-bottom: 20px;
 }
 
-.Fields {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-label {
-  font-weight: bold;
+.Login-Form label {
+  display: block;
+  font-size: 1rem;
   color: #555;
-  text-align: left;
+  margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="time"],
-textarea {
+/* Input fields styling */
+.Login-I {
+  width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-  transition: border-color 0.3s;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="tel"]:focus,
-input[type="date"]:focus,
-input[type="time"]:focus,
-textarea:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-textarea {
-  resize: vertical;
-  min-height: 100px;
-}
-
-.btn {
-  padding: 10px 20px;
-  background-color: #007bff;
+/* Button styling */
+.Login-btn {
+  padding: 12px;
+  background-color: #4caf50;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 4px;
+  font-size: 1.1rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+.Login-btn:hover {
+  background-color: #45a049;
 }
 
-p {
-  margin: 10px 0;
-}
-
-.error {
-  color: red;
-  margin-top: 10px;
-}
-
-/*********** SERVICES *********/
-
-.services-container {
-  padding: 20px;
+/* Error/success message styling */
+.Login-P {
+  margin-top: 20px;
+  font-size: 1rem;
   text-align: center;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 20px;
+.Login-P.success {
+  color: #28a745; /* Green for success */
 }
 
-.service-card {
-  border: 1px solid #ccc;
+.Login-P.error {
+  color: #dc3545; /* Red for error */
+}
+
+
+
+
+/* *******************Admin Page *****************/
+
+.app-container {
+  max-width: 1010px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
   border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.service-card:hover {
+.Admin-h1 {
+  text-align: center;
+  color: #333;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.search-bar:focus{
+  outline: none;
+  box-shadow: 0px 0px 5px black;
+}
+
+.patient-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.patient-table th, .patient-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.patient-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.patient-table tr:hover{
+  background-color: #f5f5f5;
+
+}
+
+/************* services *********************/
+#services {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+#services .container {
+  display: inline;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#services h2 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: inline-block;
+  width: 22%;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 1.8em;
+  color: #333;
+}
+
+.service p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.service:hover {
   transform: scale(1.05);
 }
 
-.service-card img {
-  max-width: 100%;
-  border-radius: 8px;
+.service img:hover {
+  opacity: 0.8;
 }
 
-.service-card h2 {
-  font-size: 1.5em;
-  margin: 10px 0;
-}
 
-.service-card p {
-  font-size: 1em;
-  color: #555;
-}
 
 /*********** FOOTER *********/
 
@@ -336,4 +446,105 @@ p {
   text-align: center;
   margin-top: 20px;
   font-size: 0.9em;
+}
+
+
+
+/******************************** Form *******************************/
+
+
+
+/* Form Container */
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  justify-content: center;
+}
+
+/* Header Styling */
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #4e73df;
+}
+
+/* Label Styling */
+label {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  text-align: left;
+  display: block;
+}
+
+/* Input Fields and Select Styling */
+.Input-F,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+}
+
+.Input-F:focus,
+select:focus,
+textarea:focus {
+  border-color: #4e73df;
+}
+
+/* Specific textarea Styling */
+textarea {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Button Styling */
+.Btn-F {
+  background-color: #4e73df;
+  color: #fff;
+  font-size: 16px;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Btn-F:hover {
+  background-color: #3554d1;
+}
+
+/* Success Message Styling */
+.success-message {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Read-Only Input Fields (like S.No) */
+input[readonly] {
+  background-color: #f9f9f9;
+  cursor: not-allowed;
+}
+
+.patient-form{
+  margin-left:50px ;
+  padding: 30px ;
+  width: 450px;
+  margin-left: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
 }
